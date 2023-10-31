@@ -16,18 +16,18 @@
 <body>
     <!-- header -->
     <header>
-        <nav class="navbar">
-            <a class="logo" href="/">
-                <span>dev</span><span>Sak</span>
-            </a>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button class="btn">Resume <i class="uil uil-file-download-alt"></i></button>
-            </ul>
+        <a class="logo" href="/">
+            <span>dev</span><span>Sak</span>
+        </a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button class="btn">Resume <i class="uil uil-file-download-alt"></i></button>
         </nav>
+    </header>
+    <main>
         <!-- banner -->
         <section class="banner-section">
             <div class="banner-description">
@@ -36,10 +36,10 @@
                     Independent University, Bangladesh</p>
                 <button class="btn">Contact Me</button>
             </div>
-            <img class="banner-img" src="images/developer.svg" alt="">
+            <div class="banner-img">
+                <img src="images/developer.svg" alt="">
+            </div>
         </section>
-    </header>
-    <main>
         <!-- about section -->
         <section class="about-section" id="about">
             <div class="about-container">
@@ -72,13 +72,24 @@
                 </div>
                 <div>
                     <img src="images/project2.png" alt="">
-                    <p>A Clothing fashion E-commerce website made with bootstrap.</p>
+                    <p>A Clothing fashion E-commerce website made with tailwind CSS.</p>
                 </div>
             </div>
         </section>
         <!-- contact section -->
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
             <h2>Let's Connect</h2>
+            <div class="contact-container">
+                <img src="images/contact.svg" alt="">
+                <div class="form-container">
+                    <form>
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                        <textarea cols="30" rows="5" placeholder="Message"></textarea>
+                    </form>
+                    <button class="btn">Submit <i class="uil uil-message"></i></button>
+                </div>
+            </div>
         </section>
     </main>
 </body>
