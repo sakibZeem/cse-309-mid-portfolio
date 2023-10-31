@@ -9,7 +9,7 @@
 
 :root {
     --color-primary: rgb(121, 43, 173);
-
+    --color-secondary: black;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 
 .logo {
     text-decoration: none;
-    color: black;
+    color: var(--color-secondary);
     font-size: 2.5rem;
     font-family: 'Zen Dots', sans-serif;
 }
@@ -52,6 +52,7 @@ body {
     text-decoration: none;
     color: var(--color-primary);
     font-size: 1.3rem;
+    
 }
 
 .resume-btn {
@@ -68,4 +69,27 @@ body {
     background-color: var(--color-primary);
     border: 1px solid #fff;
     color: #fff;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.banner-description {
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.banner-img {
+    width: 50%;
+    color: var(--color-primary);
+    transform: translate();
+}
+
+.banner-img:hover {
+
 }
