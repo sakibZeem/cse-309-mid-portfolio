@@ -86,12 +86,34 @@ nav a:hover::before {
     color: #fff;
 }
 
+/* social links */
+.social {
+    color: var(--color-primary);
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    position: fixed;
+    bottom: 60px;
+    left: 70px;
+    width: 72px;
+}
+
+.social a {
+    font-size: 2rem;
+    color: var(--color-primary);
+    transition: all 0.1s ease-in-out;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+}
+
 /* banner */
 .banner-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 140px 10% 0 10%;
+    padding: 0 10%;
 }
 
 .banner-description {
@@ -103,6 +125,11 @@ nav a:hover::before {
     font-size: 1.5rem;
 }
 
+.banner-description p span {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
 .name {
     color: var(--color-primary);
     font-size: 68px;
@@ -110,12 +137,11 @@ nav a:hover::before {
 
 .banner-img {
     width: 50%;
-
 }
 
 /* about section */
 .about-section {
-    padding: 140px 10% 0 10%;
+    padding: 180px 10% 0 10%;
 }
 
 .about-container {
@@ -178,7 +204,6 @@ nav a:hover::before {
 .projects-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
 }
 
 .projects-container>div {
@@ -250,6 +275,13 @@ textarea {
     outline: none;
 }
 
+/* footer */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
 
 /* media queries for mobile device */
 @media screen and (max-width: 761px) {
@@ -262,6 +294,10 @@ textarea {
         display: flex;
         padding-bottom: 10px;
         justify-content: center;
+    }
+
+    .social i {
+        display: none;
     }
 
     .banner-section {
@@ -290,6 +326,11 @@ textarea {
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
+        padding: 0;
+    }
+
+    .projects-container>div {
+        width: 100%;
     }
 
     .projects-container img {
