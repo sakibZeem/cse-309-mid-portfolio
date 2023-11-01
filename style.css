@@ -135,6 +135,13 @@ nav a:hover::before {
     font-size: 68px;
 }
 
+.banner-btn{
+    transition: all 0.2s ease-in-out;
+}
+
+.banner-btn:hover{
+    transform: translateY(6px);
+}
 .banner-img {
     width: 50%;
 }
