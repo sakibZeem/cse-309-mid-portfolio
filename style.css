@@ -37,7 +37,7 @@ body {
 }
 
 /* header */
-header { 
+header {
     position: sticky;
     overflow: hidden;
     top: 0;
@@ -136,13 +136,14 @@ nav a:hover::before {
     color: var(--color-primary);
 }
 
-.banner-btn{
+.banner-btn {
     transition: all 0.2s ease-in-out;
 }
 
-.banner-btn:hover{
+.banner-btn:hover {
     transform: translateY(6px);
 }
+
 .banner-img {
     width: 50%;
 }
@@ -152,23 +153,45 @@ nav a:hover::before {
     padding: 180px 10% 0 10%;
 }
 
-.about-container {
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: var(--color-bg);
-}
-
 .about-section h2 {
     text-align: center;
     margin-bottom: 40px;
     color: var(--color-primary);
 }
 
-.about-description {
-    margin-top: 2rem;
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.about-container>div {
+    width: 30%;
+}
+
+.about-container>div p {
     font-size: 1.5rem;
 }
 
+.about-container>div p span {
+    color: var(--color-primary);
+}
+
+.about-container img {
+    width: 25%;
+}
+
+.about-container img::before {
+    content: '';
+    background: #D7C0E7;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+}
 
 /* skills section */
 .skills-section {
@@ -318,7 +341,7 @@ footer {
         width: 100%;
 
     }
-    
+
     .skills-container {
         flex-wrap: wrap;
         gap: 46px;
@@ -344,7 +367,7 @@ footer {
         width: 100%;
         height: 300px;
         padding-bottom: 8px;
-        
+
     }
 
     .contact-container {
