@@ -20,14 +20,14 @@ body {
 
 /* universal */
 .btn {
-    padding: 10px 15px;
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--color-primary);
-    border-radius: 16px;
-    border: 1px solid var(--color-primary);
     cursor: pointer;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .btn:hover {
@@ -318,6 +318,7 @@ footer {
 
     header {
         flex-direction: column;
+        position: static;
     }
 
     nav a {
@@ -339,12 +340,23 @@ footer {
 
     .banner-img {
         width: 100%;
-
     }
 
     .skills-container {
         flex-wrap: wrap;
         gap: 46px;
+    }
+    .about-container{
+        flex-direction: column-reverse;
+    }
+
+    .about-container>div {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .about-container img {
+        width: 75%;
     }
 
     .skills-container img {
